@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" http-equiv="Content-type" content="text/html">
+	<title>User Input Form</title>
+</head>
+	<body>
+		<h2>User Input Form</h2>
+
+		<form method="GET" action="echoform">
+		<fieldset>
+			<legend>Personal Particular</legend>
+			Name : <input type="text" name="username" /><br/>
+			Password : <input type="password" name="password" /><br/>
+			Gender : <input type="radio" name="gender" value="m"/>Male <input type="radio" name="gender" value="f"/>Female<br/>
+			Age : <select name="age">
+				<option value="1">&lt; 1 year old</option>
+				<option value="99">1 to 99 years old</option>
+				<option value="100">&gt; 99 years old</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Languages</legend>
+			<input type="checkbox" name="lang" value="java">Java 
+			<input type="checkbox" name="lang" value="c">C/C++ 
+			<input type="checkbox" name="lang" value="cs">C#
+		</fieldset>
+
+		<fieldset>
+			<legend>Instruction</legend>
+			<textarea rows="5" cols="30" name="instruction">Enter your instruction here....</textarea>
+		</fieldset>
+
+		<input type="submit" value="SEND"/>
+		<input type="reset" name="CLEAR"/>
+		<input type="hidden" name="secret" value="007"/>
+			
+		</form>
+
+	</body>
+</html>

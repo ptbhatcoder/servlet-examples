@@ -24,6 +24,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class HelloServlet extends HttpServlet {
 	// We will support get request and post request only for this simple programme
+	@Override
 	public void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException,ServletException {
 		// first we set the response type parameters
 		response.setContentType("text/html");//the end response to the requester
@@ -78,6 +79,7 @@ public class HelloServlet extends HttpServlet {
 
 	}
 
+	@Override
 	public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException,ServletException {
 		// the functionality is the same essentially as get for this simple programme
 		doGet(request,response);
