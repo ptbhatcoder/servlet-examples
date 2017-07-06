@@ -11,7 +11,7 @@
 * servlet-api ( will be present in the tomcat folder)
 * Tomcat
 
-# How to run this
+## How to run this
 * Go to the folder $(PROJECT_ROOT)/WEB_INF/
 * Run the code : javac -cp .:$(CATALINA_HOME)/lib/servlet-api.jar -d classes/ $(find src/* | grep .java)
 * Add the folder simple-form into the $CATALINA-HOME/webapps/ folder
